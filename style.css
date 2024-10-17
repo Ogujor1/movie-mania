@@ -1,0 +1,20 @@
+body{
+  background-color:#f4f4f4;
+}
+.movie-card {
+  margin-bottom: 20px;
+}
+.movie-card img {
+  height: 400px;
+  object-fit: cover;
+}
+.search-bar {
+  margin-bottom: 20px;
+}
+.movie-details img {
+  max-width: 100%;
+  height: auto;
+}
+.watchlist {
+  margin-top: 20px;
+}

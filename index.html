@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4">Movie Mania</h1>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie...">
+        <button class="btn btn-primary mt-2" onclick="searchMovies()">Search</button>
+    </div>
+
+    <h2>Trending Movies</h2>
+    <div id="trendingContainer" class="row"></div>
+
+    <div id="movieDetails" class="movie-details mt-4"></div>
+
+    <h2>Your Watchlist</h2>
+    <div id="watchlistContainer" class="row watchlist"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
