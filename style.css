@@ -1,20 +1,146 @@
-body{
-  background-color:#f4f4f4;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
+
+h1, h2 {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+/* Header Section */
+h1 {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.search-bar button {
+  margin-top: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #1a242f;
+}
+
+/* Movie Cards */
 .movie-card {
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
-.movie-card img {
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
   height: 400px;
   object-fit: cover;
+  object-position: center;
 }
-.search-bar {
+
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #c0392b;
+}
+
+/* Movie Details */
+#movieDetails {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+#movieDetails img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin-bottom: 20px;
 }
-.movie-details img {
-  max-width: 100%;
-  height: auto;
+
+#movieDetails h3 {
+  font-size: 28px;
+  color: #2c3e50;
 }
+
+/* Watchlist */
 .watchlist {
-  margin-top: 20px;
+  margin-top: 40px;
 }
+
+.watchlist .movie-card {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-img-top {
+      height: 300px;
+  }
+
+  .search-bar input {
+      width: 90%;
+  }
+}
+
